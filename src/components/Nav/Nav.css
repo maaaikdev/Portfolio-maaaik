@@ -1,0 +1,36 @@
+.nav-content {
+    background-color: #66b6e1;
+    padding: 16px;
+}
+
+.w-content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+}
+
+.left h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.right button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.right button:hover {
+    color: #000;
+}
