@@ -4,9 +4,7 @@ import "./Jobs.css";
 import imageSkillList from '../ImagesSkills'
 
 const JobsComponent = ({list}) => {
-
-    console.log("list", list)
-
+    
     const [imagesSkills, serImagesSkills] = useState([]);
 
     useEffect(() => {
@@ -50,18 +48,22 @@ const JobsComponent = ({list}) => {
                             <img src={project.image} alt={project.title} />
                         </div>                            
                         <div className="network">
+                        {imagesSkills.length > 0 && (
                             <img 
                                 src={imagesSkills[10].image} 
                                 alt={imagesSkills[10].title} 
                                 className="networkImg"
                                 onClick={() => handleLinkWebsite(project.url)}
-                            />
+                            />                            
+                        )}
+{                       imagesSkills.length > 0 && (
                             <img 
                                 src={imagesSkills[3].image} 
                                 alt={imagesSkills[3].title} 
                                 className="networkImg"
                                 onClick={() => handleLinkGihub(project.urlGithub)}
-                            />
+                            />                        
+                        )}
                         </div>
                     </div>
                 </div>
