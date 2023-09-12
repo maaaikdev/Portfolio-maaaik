@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "image": "images/skills/angular.svg",
+        "title": "angular",
+        "order": 1
+    },
+    {
+        "id": 2,
+        "image": "images/skills/bootstrap-4.svg",
+        "title": "bootstrap",
+        "order": 2
+    },
+    {
+        "id": 3,
+        "image": "images/skills/git.svg",
+        "title": "git",
+        "order": 3
+    },
+    {
+        "id": 4,
+        "image": "images/skills/github.svg",
+        "title": "github",
+        "order": 4
+    },
+    {
+        "id": 5,
+        "image": "images/skills/javascript.svg",
+        "title": "javascript",
+        "order": 5
+    },
+    {
+        "id": 6,
+        "image": "images/skills/linkedin.svg",
+        "title": "linkedin",
+        "order": 6
+    },
+    {
+        "id": 7,
+        "image": "images/skills/nextjs.svg",
+        "title": "nextjs",
+        "order": 7
+    },
+    {
+        "id": 8,
+        "image": "images/skills/react.svg",
+        "title": "react",
+        "order": 8
+    },
+    {
+        "id": 9,
+        "image": "images/skills/typescript.svg",
+        "title": "typescript",
+        "order": 9
+    },
+    {
+        "id": 10,
+        "image": "images/skills/html.svg",
+        "title": "html5",
+        "order": 10
+    },
+    {
+        "id": 11,
+        "image": "images/skills/world-wide-web.svg",
+        "title": "www",
+        "order": 11
+    }
+]

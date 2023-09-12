@@ -1,0 +1,75 @@
+.content-box {
+    padding: 24px;
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 43% 54%;
+    grid-column-gap: 24px;
+    align-items: center;
+}
+
+.content-box .left-job {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content-box .left-job h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #464646;
+}
+
+.content-box .left-job p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #464646;
+    line-height: 20px;
+}
+
+.content-box .left-job h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-list img {
+    width: 26px;
+    margin-right: 16px;
+}
+
+.content-box .right-job {
+    overflow:hidden;
+}
+
+.content-box .right-job img{
+    width: 100%;    
+}
+
+.content-box .right-job .box-project-img {
+    border: 1px solid #ddd;
+}
+
+.content-box .right-job .network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12px auto 0;
+}
+
+.content-box .right-job .network .networkImg {
+    width: 28px;
+    margin: 0 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.content-box .right-job .network .networkImg:hover {
+    opacity: .7;
+}
