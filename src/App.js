@@ -1,9 +1,9 @@
 import './App.css';
 import NavBar from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
-import JobsComponent from './components/Jobs/Jobs';
 import Tabs from './modules/Tabs/Tabs';
- // Import the JSON file
+import Contact from './components/Contact/Contact';
+import AboutMeComponent from './components/AboutMe/AboutMe';
 
 function App() {	
   	return (
@@ -11,12 +11,17 @@ function App() {
 			<nav>
 				<NavBar />
 			</nav>
-			<header>
+			<header id="home">
 				<Hero />
 			</header>
-			<section className='projects'>
-				{/* <JobsComponent /> */}
+			<section id="aboutMe" className='about-me'>
+				<AboutMeComponent />
+			</section>
+			<section className='projects' id="projectsSection">
 				<Tabs />
+			</section>
+			<section className='contact' id="contact">
+				<Contact />
 			</section>
 		</div>
   );

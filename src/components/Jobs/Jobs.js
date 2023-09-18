@@ -38,7 +38,9 @@ const JobsComponent = ({list}) => {
                         <div className="skills-list">
                             {project.tech?.map((skill, index) => (
                                 <div key={index}>
-                                    <img src={getImageSkill(skill)} alt={project.title} className="img-skill"/>
+                                    <span data-tooltip={skill}>
+                                        <img src={getImageSkill(skill)} alt={project.title} className="img-skill"/>
+                                    </span>                                   
                                 </div>
                             ))}
                         </div>
@@ -48,22 +50,22 @@ const JobsComponent = ({list}) => {
                             <img src={project.image} alt={project.title} />
                         </div>                            
                         <div className="network">
-                        {imagesSkills.length > 0 && (
-                            <img 
-                                src={imagesSkills[10].image} 
-                                alt={imagesSkills[10].title} 
-                                className="networkImg"
-                                onClick={() => handleLinkWebsite(project.url)}
-                            />                            
-                        )}
-{                       imagesSkills.length > 0 && (
-                            <img 
-                                src={imagesSkills[3].image} 
-                                alt={imagesSkills[3].title} 
-                                className="networkImg"
-                                onClick={() => handleLinkGihub(project.urlGithub)}
-                            />                        
-                        )}
+                            {imagesSkills.length > 0 && (
+                                <img 
+                                    src={imagesSkills[10].image} 
+                                    alt={imagesSkills[10].title} 
+                                    className="networkImg"
+                                    onClick={() => handleLinkWebsite(project.url)}
+                                />                            
+                            )}
+    {                       imagesSkills.length > 0 && (
+                                <img 
+                                    src={imagesSkills[3].image} 
+                                    alt={imagesSkills[3].title} 
+                                    className="networkImg"
+                                    onClick={() => handleLinkGihub(project.urlGithub)}
+                                />                        
+                            )}
                         </div>
                     </div>
                 </div>

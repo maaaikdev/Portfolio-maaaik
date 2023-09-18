@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+    z-index: 1;
 }
   
  .tabs li {
@@ -57,4 +58,22 @@ img.img-tab {
   
 .tab-pane.active {
     display: block;
-}  
+} 
+
+@media(max-width:768px) {
+    .tab-container {
+        width: initial;
+    }
+    .tab-content .content-box {
+        grid-template-columns: 100%;
+        padding: 0 0 24px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+    .tab-container .content-box:last-child {
+        border-bottom: none;
+    }
+    .tab-content .content-box .left-job{
+        margin-bottom: 24px;
+    }
+}

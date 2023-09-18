@@ -2,7 +2,7 @@
     {
         "id":1,
         "title": "AserSeguridad",
-        "description": "A safety amd health at work Website for AserSeguridad Client, it was created in Angular with forms in HubSpot.",
+        "description": "A safety and health at work Website for AserSeguridad Client, it was created in Angular with forms in HubSpot.",
         "image": "images/projects/angular/aserseguridad.jpg",
         "tech" :[
             "angular",
@@ -38,10 +38,9 @@
         "tech" :[
             "react",
             "javascript",
-            "typescript",
-            "html5"
+            "typescript"
         ],
-        "url": "https://dorado.tv/",
+        "url": "https://maaaik.site/diagram-bpmn/",
         "urlGithub": "https://github.com/maaaikdev/workflow-diagram",
         "category": "React"
     },
@@ -53,10 +52,9 @@
         "tech" :[
             "react",
             "javascript",
-            "typescript",
-            "html5"
+            "typescript"
         ],
-        "url": "https://dorado.tv/",
+        "url": "https://maaaik.site/triqui-game/",
         "urlGithub": "https://github.com/maaaikdev/game-triqui",
         "category": "React"
     }

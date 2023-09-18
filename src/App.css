@@ -41,3 +41,63 @@
   background-color: #66b6e1;
   padding: 24px;
 }
+
+.about-me {
+  background-color: #f4f4f4;
+  padding: 24px;
+}
+
+.contact {
+  padding: 40px 0 0;
+}
+
+html { scroll-behavior: smooth; }
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+[data-tooltip] {
+	position: relative;
+	/* border-bottom: 1px dashed #000; */
+	cursor: help;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	text-transform:capitalize;
+}
+
+[data-tooltip]::after {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	content: attr(data-tooltip);
+	left: 0;
+	top: calc(100% + -70px);
+	border-radius: 3px;
+	box-shadow: 0 0 5px 2px rgba(100, 100, 100, 0.6);
+	background-color: white;
+	z-index: 10;
+	padding: 4px 8px;
+	/* width: 300px; */
+	transform: translateY(-20px);
+	transition: all 150ms cubic-bezier(.25, .8, .25, 1);
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 300ms;
+}
+
+@media(max-width:768px) {
+
+    .nav-content {
+		padding: 16px 32px;
+	}
+}

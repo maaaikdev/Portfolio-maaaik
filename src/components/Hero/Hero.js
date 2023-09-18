@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css"
-import mainImage from "../../assets/images/iopw_3yzc_210520.jpg"
+// import mainImage from "images/code-main-image.jpg"
 import IMAGES from '../../assets/data/skills.json'
 
 const Hero = () => {
@@ -34,23 +34,60 @@ const Hero = () => {
       
     // Utiliza la función de comparación personalizada con sort()
     skills.sort(compararPorEdad);
-      
-    console.log("Reorder", skills);
 
-    console.log("IMAGES HEO", IMAGES)
+    const handleLinkWebsite = (url) => {
+        window.open(url, '_blank');
+    }
+
     return (
         <div className="container-hero">
+            <div className="overlay-white"></div>
             <div className="columns">
+                <div className="photo">
+                    {/* <div className="overlay-white"></div>
+                    <img src="images/me-main-hero.jpg" alt="Maaaik"/> */}
+                </div>
                 <div className="position">
                     <h1>Front End Developer</h1>
-                    <p>Hi, I'm <span>Michael Reyes</span></p>
-                    <p>A passionate about turn ideas into code from Colombia.</p>
-                </div>
-                <div className="photo">
-                    <img src={mainImage} alt="Maaaik"/>
-                </div>
+                    <p>Hi, I'm <span>Michael Reyes,</span><br/>
+                    A passionate about turn ideas into code from Colombia.</p>
+                    <div className="network">
+                            <span data-tooltip="Linkedin">
+                                <img 
+                                    src="images/skills/linkedin-black.svg" 
+                                    alt="Linkedin Michael Reyes"
+                                    className="networkImg"                                
+                                    onClick={() => handleLinkWebsite('https://www.linkedin.com/in/maaaik/')}
+                                />
+                            </span>
+                            <span data-tooltip="Linkedin">
+                                <img 
+                                    src="images/skills/github.svg" 
+                                    alt="Git Hub Michael Reyes"
+                                    className="networkImg"
+                                    onClick={() => handleLinkWebsite('https://github.com/maaaikdev/')}
+                                /> 
+                            </span>
+                    </div>
+                    <div className="skills">
+                        <h2>My skills</h2>
+                        <div className="main-skills">
+                            { IMAGES && skills.map((item) => 
+                                <div key={item.id}>
+                                    <span data-tooltip={item.title}>
+                                        <img src={item.image} alt="logo" />
+                                    </span>                        
+                                </div>                    
+                            )}
+                        </div>
+                        <div className="created">
+                            <img src="images/skills/react.svg" alt="React Portfolio"/>
+                            <p>"This portfolio was created with React"</p>
+                        </div>
+                    </div>
+                </div>                
             </div>
-            <div className="skills">
+            {/* <div className="skills">
                 <h2>My skills</h2>
                 <div className="main-skills">
                 { IMAGES && skills.map((item) => 
@@ -59,7 +96,7 @@ const Hero = () => {
                     </div>                    
                 )}
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
