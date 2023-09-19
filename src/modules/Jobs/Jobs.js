@@ -58,7 +58,7 @@ const JobsComponent = ({list}) => {
                             />
                         </h4>
                         <div className="skills-list">
-                            {project.length > 0 && project.tech.map((skill) => (
+                            {project.tech.map((skill) => (
                                 <div>
                                     <span data-tooltip={skill}>
                                         <img src={getImageSkill(skill)} alt={project.title} className="img-skill"/>
@@ -80,14 +80,18 @@ const JobsComponent = ({list}) => {
                                     onClick={() => handleLinkWebsite(project.url)}
                                 />                            
                             )}
-                            {imagesSkills.length > 0 && (
+                            {imagesSkills.length > 0 && project.urlGithub !== null ? (
                                 <img 
                                     src={imagesSkills[3].image} 
                                     alt={imagesSkills[3].title} 
                                     className="networkImg"
                                     onClick={() => handleLinkGihub(project.urlGithub)}
                                 />                        
-                            )}
+                            ): 
+                                <span data-tooltip="Code not available">
+                                    <img src="images/skills/github.svg" className="lock" alt="GitHub lock" />
+                                </span>
+                            }
                         </div>
                     </div>
             </div>

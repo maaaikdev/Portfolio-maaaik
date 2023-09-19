@@ -1,6 +1,60 @@
-[    
+[   
     {
         "id":1,
+        "titleES": "Midatacrédito - Experian",
+        "titleUS": "Midatacrédito - Experian",
+        "descriptionES": "Sitio web para consultar los reportes de su vida financiera contra centrales de riesgo (Bancos).",
+        "descriptionUS": "Web site to consult the reports of your financial life against risk centers (Banks)",
+        "image": "images/projects/angular/midatacredito.jpg",
+        "tech" :[
+            "angular",
+            "javascript",
+            "typescript",
+            "html5",
+            "bootstrap"
+        ],
+        "url": "https://www.midatacredito.com/",
+        "urlGithub": null,
+        "category": "Angular"
+    },
+    {
+        "id":2,
+        "titleES": "Buscacrédito - Experian",
+        "titleUS": "Buscacrédito - Experian",
+        "descriptionES": "Con respecto a tu puntaje, tu puedes acceder a diferentes ofertas de crédito.",
+        "descriptionUS": "Regarding your score, you can access to differents credit offers",
+        "image": "images/projects/angular/buscaredito.jpg",
+        "tech" :[
+            "angular",
+            "javascript",
+            "typescript",
+            "html5",
+            "bootstrap"
+        ],
+        "url": "https://buscacredito.midatacredito.com/",
+        "urlGithub": null,
+        "category": "Angular"
+    },
+    {
+        "id":3,
+        "titleES": "Ponte al día - Experian",
+        "titleUS": "Ponte al día - Experian",
+        "descriptionES": "Si tienes alguna deuda pendiente, el sistema podrá ofrecer un acuerdo de pago.",
+        "descriptionUS": "If you have any pending debt, the system will be able to offer a payment agreement.",
+        "image": "images/projects/angular/pontealdia.jpg",
+        "tech" :[
+            "angular",
+            "javascript",
+            "typescript",
+            "html5",
+            "bootstrap"
+        ],
+        "url": "https://pontealdia.midatacredito.com/",
+        "urlGithub": null,
+        "category": "Angular"
+    }, 
+    {
+        "id":4,
         "titleES": "AserSeguridad",
         "titleUS": "AserSeguridad",
         "descriptionES": "Un sitio web de Salud y seguridad en el trabajo para el cliente Aserseguridad, fue creada en Angular con formularios en HubSpot.",
@@ -18,7 +72,7 @@
         "category": "Angular"
     },
     {
-        "id":2,
+        "id":5,
         "titleES": "Dorado TV",
         "titleUS": "Dorado TV",
         "descriptionES": "Un catalogo de artistas audivisuales, toda la información viene desde una API Rest",
@@ -35,7 +89,7 @@
         "category": "Angular"
     },
     {
-        "id":3,
+        "id":6,
         "titleES": "Diagrama flujo de trabajo",
         "titleUS": "Workflow diagram",
         "descriptionES": "Para crear flujos de trabajo a través de formularios que crea elementos con la libreria BPMN.js",
@@ -51,7 +105,7 @@
         "category": "React"
     },
     {
-        "id":4,
+        "id":7,
         "titleES": "Juego de triqui",
         "titleUS": "Triqui game",
         "descriptionES": "Fue creado para practicar React como un projecto personal",
@@ -67,7 +121,7 @@
         "category": "React"
     },
     {
-        "id":5,
+        "id":8,
         "titleES": "Portafolio Michael Reyes",
         "titleUS": "Michael Reyes Portfolio",
         "descriptionES": "Como proyecto personal, quise crear mi portafolio con la libreria  React",
