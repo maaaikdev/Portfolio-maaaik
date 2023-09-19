@@ -1,7 +1,8 @@
 [    
     {
         "id":1,
-        "title": "AserSeguridad",
+        "titleES": "AserSeguridad",
+        "titleUS": "AserSeguridad",
         "descriptionES": "Un sitio web de Salud y seguridad en el trabajo para el cliente Aserseguridad, fue creada en Angular con formularios en HubSpot.",
         "descriptionUS": "A safety and health at work Website for AserSeguridad Client, it was created in Angular with forms in HubSpot.",
         "image": "images/projects/angular/aserseguridad.jpg",
@@ -18,7 +19,8 @@
     },
     {
         "id":2,
-        "title": "Dorado TV",
+        "titleES": "Dorado TV",
+        "titleUS": "Dorado TV",
         "descriptionES": "Un catalogo de artistas audivisuales, toda la información viene desde una API Rest",
         "descriptionUS": "A catalog of audiovisual artists, all the data from an API Rest",
         "image": "images/projects/angular/doradotv.jpg",
@@ -34,7 +36,8 @@
     },
     {
         "id":3,
-        "title": "Workflow diagram",
+        "titleES": "Diagrama flujo de trabajo",
+        "titleUS": "Workflow diagram",
         "descriptionES": "Para crear flujos de trabajo a través de formularios que crea elementos con la libreria BPMN.js",
         "descriptionUS": "To create workflow diagram through forms that created the elements with BPMN.js library",
         "image": "images/projects/react/BPMN-diagram.jpg",
@@ -49,10 +52,11 @@
     },
     {
         "id":4,
-        "title": "Triqui game",
+        "titleES": "Juego de triqui",
+        "titleUS": "Triqui game",
         "descriptionES": "Fue creado para practicar React como un projecto personal",
         "descriptionUS": "It was created to practice React as a personal project",
-        "image": "images/projects/react//triqui-game.jpg",
+        "image": "images/projects/react/triqui-game.jpg",
         "tech" :[
             "react",
             "javascript",
@@ -60,6 +64,22 @@
         ],
         "url": "https://maaaik.site/triqui-game/",
         "urlGithub": "https://github.com/maaaikdev/game-triqui",
+        "category": "React"
+    },
+    {
+        "id":5,
+        "titleES": "Portafolio Michael Reyes",
+        "titleUS": "Michael Reyes Portfolio",
+        "descriptionES": "Como proyecto personal, quise crear mi portafolio con la libreria  React",
+        "descriptionUS": "As a personal project, i wanted to create my portfolio with the React library",
+        "image": "images/projects/react/portfolio.jpg",
+        "tech" :[
+            "react",
+            "javascript",
+            "typescript"
+        ],
+        "url": "https://maaaik.site/",
+        "urlGithub": "https://github.com/maaaikdev/Portfolio-maaaik",
         "category": "React"
     }
 ]

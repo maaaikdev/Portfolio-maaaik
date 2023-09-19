@@ -40,7 +40,7 @@ const JobsComponent = ({list}) => {
                                 id="projects.titleWeb"
                                 defaultMessage={project.title}
                                 values={{
-                                    title: project.title
+                                    title: lang === 'es-CO' ? project.titleES : project.titleUS
                                 }}
                             />
                         </h3>

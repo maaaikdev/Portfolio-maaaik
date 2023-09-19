@@ -2,7 +2,7 @@
     "app.lang": "Seleccionar idioma",
 
     "menu.home": "Inicio",
-    "menu.aboutMe": "Acerca de mi",
+    "menu.aboutMe": "Acerca de mí",
     "menu.projects": "Projectos",
     "menu.contact": "Contacto",
 
@@ -11,7 +11,7 @@
     "hero.titleSkills": "Mis habilidades",
     "hero.created": "Este portafolio fue creado con React",
 
-    "aboutme.title": "Acerca de mi",
+    "aboutme.title": "Acerca de mí",
     "aboutme.description1": "Como Desarrollador Front End, convierto ideas en código, he tenido la oportunidad de participar en diferentes proyectos de sitios web como Información, Financiero, Audivisual, Dashboards y Flujos de trabajo. He trabajado con algunas librerias como BPMN.js, Chart.js, Heatmap.js and Frameworks/Librerias como Angular, React and VCL. Estoy en la capacidad de hacer sitios web atractivos, interactivos, utiles y profesionales.",
     "aboutme.description2": "Estoy en constante aprendizaje, En este momento estoy mejorando mis habilidades en React e Ingles.",
     "aboutme.description3": "En mi tiempo libre, me encanta correr por las montañas, ir al gimnasio e intento mantener un estilo de vida saludable. Tengo 2 mascotas, Amatista (perrita) y Frida (Gata), ellas son muy cariñosas",
