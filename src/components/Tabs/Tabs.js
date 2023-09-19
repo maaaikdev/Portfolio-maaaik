@@ -13,23 +13,27 @@ const Tabs = () => {
     const [objectsInCategory, setObjectsInCategory] = useState([]);
 
     useEffect(() => {
-        //only called once
-        projectList()
-            .then((res) => {
-                setProjects(res);                
-            });
-            
-        imageSkillList()
-            .then((response) => {
-                serImageProject(response);                
-            })
-    }, );
+        // Fetch project and image data when the component mounts
+        const fetchData = async () => {
+            try {
+                const projectData = await projectList();
+                const imageSkillData = await imageSkillList();
+
+                setProjects(projectData);
+                serImageProject(imageSkillData);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const categories = [...new Set(projects.map((item) => item.category))];
 
     useEffect(() => {
         const filterByCategory = projects.filter(
-          (item) => item.category === categories[activeTab]
+            (item) => item.category === categories[activeTab]
         );
         setObjectsInCategory(filterByCategory);
     }, [projects, activeTab]);
@@ -54,7 +58,7 @@ const Tabs = () => {
                     <li
                         key={index}
                         className={index === activeTab ? 'active-tab' : ''}
-                        onClick={() => handleTabClick(index, tab)}
+                        onClick={() => handleTabClick(index)}
                     >
                         {imagesProject.length > 0 && imagesProject[0] && (
                             <img 
@@ -71,10 +75,10 @@ const Tabs = () => {
                 <div className="tab-content">
                     {projects.length > 0 && projects.map((tab, index) => (
                         <div
-                            key={index}
+                            key={tab.id}
                             className={index === activeTab ? 'tab-pane active' : 'tab-pane'}
                         >
-                        <JobsComponent key={tab.id} list={objectsInCategory} />
+                            <JobsComponent tabId={tab.id} list={objectsInCategory} />
                         </div>
                     ))}
                 </div>

@@ -57,10 +57,10 @@ const NavBar = () => {
     const getMenuMobile = () => {
         return (
             <>
-                <a href="#home"><span class="material-symbols-outlined">home</span></a>
-                <a href="#aboutMe"><span class="material-symbols-outlined">face</span></a>
-                <a href='#projectsSection'><span class="material-symbols-outlined">splitscreen_top</span></a>
-                <a href='#contact'><span class="material-symbols-outlined">contact_page</span></a>
+                <a href="#home"><span className="material-symbols-outlined">home</span></a>
+                <a href="#aboutMe"><span className="material-symbols-outlined">face</span></a>
+                <a href='#projectsSection'><span className="material-symbols-outlined">splitscreen_top</span></a>
+                <a href='#contact'><span className="material-symbols-outlined">contact_page</span></a>
             </>
         )
     }

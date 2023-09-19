@@ -4,8 +4,8 @@ import "./Tooltip.css"
 const Tooltip = ({props}) => {
 
     return (
-        <div class="tooltip">Hover over me
-        <   span class="tooltiptext">Tooltip text</span>
+        <div className="tooltip">Hover over me
+        <   span className="tooltiptext">Tooltip text</span>
         </div>
     )
 }

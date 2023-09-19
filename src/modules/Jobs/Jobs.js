@@ -5,19 +5,24 @@ import imageSkillList from '../../components/ImagesSkills';
 import { FormattedMessage } from "react-intl";
 
 const JobsComponent = ({list}) => {
-    
-    const [imagesSkills, serImagesSkills] = useState([]);
+    const [imagesSkills, setImagesSkills] = useState([]);
 
     useEffect(() => {
-        imageSkillList()
-            .then((response) => {
-                serImagesSkills(response);
-            })
-    });
+        // Fetch image skills data only once when the component mounts
+        if (imagesSkills.length === 0) {
+            imageSkillList()
+                .then((response) => {
+                    setImagesSkills(response);
+                })
+                .catch((error) => {
+                    console.error("Error fetching image skills:", error);
+                });
+        }
+    }, [imagesSkills]);
 
     const getImageSkill = (skill) => {
-        const imgSkill = imagesSkills.filter(img => img.title === skill)        
-        if(imgSkill.length > 0) return imgSkill[0].image
+        const imgSkill = imagesSkills.find((img) => img.title === skill);
+        return imgSkill ? imgSkill.image : '';
     }
 
     const handleLinkWebsite = (url) => {
@@ -30,17 +35,16 @@ const JobsComponent = ({list}) => {
 
     const lang = localStorage.getItem('lang')
 
-    return (
-        <>
-            {list.length > 0 && list?.map((project, index) => (
-                <div className="content-box">
-                    <div className="left-job">
+    const renderProjectDetails = (project) => {
+        return (
+            <div className="content-box" key={project.id}>
+                <div className="left-job" >
                         <h3>
                             <FormattedMessage 
                                 id="projects.titleWeb"
                                 defaultMessage={project.title}
                                 values={{
-                                    title: lang === 'es-CO' ? project.titleES : project.titleUS
+                                    titleProject: lang === 'es-CO' ? project.titleES : project.titleUS
                                 }}
                             />
                         </h3>
@@ -60,8 +64,8 @@ const JobsComponent = ({list}) => {
                             />
                         </h4>
                         <div className="skills-list">
-                            {project.tech?.map((skill, index) => (
-                                <div key={index}>
+                            {project.length > 0 && project.tech.map((skill) => (
+                                <div>
                                     <span data-tooltip={skill}>
                                         <img src={getImageSkill(skill)} alt={project.title} className="img-skill"/>
                                     </span>                                   
@@ -92,8 +96,14 @@ const JobsComponent = ({list}) => {
                             )}
                         </div>
                     </div>
-                </div>
-                            
+            </div>
+        );
+    }
+
+    return (
+        <>
+            {list.length > 0 && list.map((project) => (
+                    renderProjectDetails(project)
             ))}
         </>
     )

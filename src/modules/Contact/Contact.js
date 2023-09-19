@@ -25,12 +25,12 @@ const Contact = () => {
                 </p>
                 <div className="contact-box">
                     <div className="contact-bullet">
-                        <span class="material-symbols-outlined">phone_iphone</span>
+                        <span className="material-symbols-outlined">phone_iphone</span>
                         <img src="images/flag/colombia.png" alt="Colombia" className="flagImg"/>
                         <p>(57) 3168568745</p>
                     </div>
                     <div className="contact-bullet">
-                    <span class="material-symbols-outlined">mail</span>
+                    <span className="material-symbols-outlined">mail</span>
                         <p>maaaik.dev@gmail.com</p>
                     </div>
                     <div className="contact-bullet" onClick={() => handleLinkedin()}>
