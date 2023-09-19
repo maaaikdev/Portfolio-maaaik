@@ -7,15 +7,15 @@
     "menu.contact": "Contacto",
 
     "hero.title": "Desarrollador Front End",
-    "hero.description": "Hola, Soy Michael Reyes, Un apasionado en convertir ideas en coódigo desde Colombia",
+    "hero.description": "Hola, Soy Michael Reyes, un apasionado en convertir ideas en código desde Colombia",
     "hero.titleSkills": "Mis habilidades",
     "hero.created": "Este portafolio fue creado con React",
 
     "aboutme.title": "Acerca de mí",
-    "aboutme.description1": "Como Desarrollador Front End, convierto ideas en código, he tenido la oportunidad de participar en diferentes proyectos de sitios web como Información, Financiero, Audivisual, Dashboards y Flujos de trabajo. He trabajado con algunas librerias como BPMN.js, Chart.js, Heatmap.js and Frameworks/Librerias como Angular, React and VCL. Estoy en la capacidad de hacer sitios web atractivos, interactivos, utiles y profesionales.",
-    "aboutme.description2": "Estoy en constante aprendizaje, En este momento estoy mejorando mis habilidades en React e Ingles.",
-    "aboutme.description3": "En mi tiempo libre, me encanta correr por las montañas, ir al gimnasio e intento mantener un estilo de vida saludable. Tengo 2 mascotas, Amatista (perrita) y Frida (Gata), ellas son muy cariñosas",
-    "aboutme.english": "Nivel de ingles (A2/B1)",
+    "aboutme.description1": "Como Desarrollador Front End me encanta convertir ideas en código además he tenido la oportunidad de participar en diferentes proyectos de sitios web como Informativos, Financieros, Audivisual, Dashboards y Flujos de trabajo. En mis desafíos he trabajado con algunas librerías como BPMN.js, Chart.js, Heatmap.js y Frameworks/Librerías como Angular, React and VCL y esto me hace capaz de construir sitios web atractivos, interactivos, utiles y profesionales.",
+    "aboutme.description2": "Siempre estoy buscando crecer y mis habilidades en React, Angular, javascript, typescript e Ingles.",
+    "aboutme.description3": "En mi tiempo libre, me encanta correr por las montañas, ir al gimnasio e intento mantener un estilo de vida saludable y desconectarme de todo por unos instantes.",
+    "aboutme.english": "Nivel de inglés (A2/B1)",
 
     "projects.title": "Mis proyectos",
     "projects.tech": "Tecnología usada",
