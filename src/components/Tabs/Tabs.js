@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Tabs.css";
-import projectList from "../../components/ProjectItems"
-import JobsComponent from '../../components/Jobs/Jobs';
-import imageSkillList from '../../components/ImagesSkills'
+import projectList from "../ProjectItems"
+import JobsComponent from '../../modules/Jobs/Jobs';
+import imageSkillList from '../ImagesSkills';
+import { FormattedMessage } from 'react-intl';
 
 const Tabs = () => {
 
@@ -24,6 +25,8 @@ const Tabs = () => {
             })
     }, );
 
+    const categories = [...new Set(projects.map((item) => item.category))];
+
     useEffect(() => {
         const filterByCategory = projects.filter(
           (item) => item.category === categories[activeTab]
@@ -31,7 +34,6 @@ const Tabs = () => {
         setObjectsInCategory(filterByCategory);
     }, [projects, activeTab]);
 
-    const categories = [...new Set(projects.map((item) => item.category))];
 
     const handleTabClick = (index) => {
         setActiveTab(index);
@@ -40,7 +42,12 @@ const Tabs = () => {
     return (
         
         <>
-          <h2 className='title-projects'>My projects</h2>
+            <h2 className='title-projects'>
+                <FormattedMessage 
+                    id="projects.title"
+                    defaultMessage="Mis proyectos"
+                />
+            </h2>
              <div className='tab-container'>
                 <ul className="tabs">
                 {projects.length > 0 && categories.map((tab, index) => (

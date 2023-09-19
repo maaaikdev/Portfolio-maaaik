@@ -1,5 +1,6 @@
 import React from "react";
-import "./Contact.css"
+import "./Contact.css";
+import { FormattedMessage } from "react-intl";
 
 const Contact = () => {
 
@@ -10,8 +11,18 @@ const Contact = () => {
     return (
         <>
             <div className="container-contact">
-                <h2>Contact</h2>
-                <p className="description">If you are intrested in <span>hiring</span> me, <span>email</span> me or <span>connect</span> and chat with me via LinkedIn!</p>
+                <h2>
+                    <FormattedMessage 
+                        id="contact.title"
+                        defaultMessage="Contacto"
+                    />
+                </h2>
+                <p className="description">
+                    <FormattedMessage 
+                        id="contact.description"
+                        defaultMessage="Si estas interesado en contratarme, escríbeme o conecta y chatea conmigo por Linkedin."
+                    />
+                </p>
                 <div className="contact-box">
                     <div className="contact-bullet">
                         <span class="material-symbols-outlined">phone_iphone</span>
@@ -29,7 +40,12 @@ const Contact = () => {
                 </div>
             </div>
             <div className="right-reserved">
-                <h3>Created by <span>Michael Reyes</span> | All rights reserved</h3>
+                <h3>
+                    <FormattedMessage 
+                        id="contact.right"
+                        defaultMessage="Created by Michael Reyes | All rights reserved"
+                    />
+                </h3>
             </div>
         </>
     )

@@ -1,0 +1,28 @@
+{
+    "app.lang": "Select Language",
+    
+    "menu.home": "Home",
+    "menu.aboutMe": "About me",
+    "menu.projects": "Projects",
+    "menu.contact": "Contact",
+
+    "hero.title": "Front End Developer",
+    "hero.description": "Hi, I'm Michael Reyes, A passionate about turn ideas into code from Colombia.",
+    "hero.titleSkills": "My skills",
+    "hero.created": "This portfolio was created with React",
+
+    "aboutme.title": "About me",
+    "aboutme.description1": "As a Front-End Developer, I turn ideas into code, i have had to chance to participate in several projects like Information, Financial, Audiovisual, Dashboards and Workflow Websites, i have worked some libraries like BPMN.js, Chart.js, Heatmap.js and Frameworks/Libraries as Angular, React and VCL. I am to able to make attractive, interactive, useful and professional websites.",
+    "aboutme.description2": "I'm constantly learning, in this moment I'm improving my React and English skills.",
+    "aboutme.description3": "In my free time, i love to running over the mountains, go to the gym and try to keep a healthy lifestyle. I have two pets, Amatista (dog) and Frida (cat), they are very affectionate.",
+    "aboutme.english": "English level (A2/B1)",
+
+    "projects.title": "My projects",
+    "projects.tech": "Tech used",
+    "projects.titleWeb": "{title}",
+    "projects.description": "{description}",
+
+    "contact.title": "Contact",
+    "contact.description": "If you are intrested in hiring me, email me or connect and chat with me via LinkedIn!",
+    "contact.right":"Created by Michael Reyes | All rights reserved"
+}

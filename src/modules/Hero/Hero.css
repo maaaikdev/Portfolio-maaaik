@@ -133,7 +133,6 @@
 .main-skills {
     display: flex;
     flex-direction: row;
-    /* border: #ddd 1px solid; */
     border-radius: 10px;
     padding: 16px;
     align-items: center;

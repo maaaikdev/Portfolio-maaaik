@@ -1,13 +1,29 @@
+import React, { useContext } from 'react'
 import './App.css';
-import NavBar from './components/Nav/Nav';
-import Hero from './components/Hero/Hero';
-import Tabs from './modules/Tabs/Tabs';
-import Contact from './components/Contact/Contact';
-import AboutMeComponent from './components/AboutMe/AboutMe';
+import NavBar from './modules/Nav/Nav';
+import Hero from './modules/Hero/Hero';
+import Tabs from './components/Tabs/Tabs';
+import Contact from './modules/Contact/Contact';
+import AboutMeComponent from './modules/AboutMe/AboutMe';
+import  { langContext } from './context/langContext';
+import { FormattedMessage } from 'react-intl';
 
-function App() {	
-  	return (
+function App() {
+
+	const language = useContext(langContext);
+
+  	return (		
 		<div className="App">
+			<div className='flags-lang'>
+				<p>
+					<FormattedMessage 
+						id="app.lang"
+						defaultMessage="Seleccionar lenguaje"
+					/>
+				</p>
+				<img src='images/flag/colombia.png' onClick={() => language.setLanguage('es-CO')} alt='lang-es'/>
+				<img src='images/flag/usa.png' onClick={() => language.setLanguage('en-US')} alt='lang-es'/>
+			</div>
 			<nav>
 				<NavBar />
 			</nav>

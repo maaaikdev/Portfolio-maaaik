@@ -1,16 +1,13 @@
 import React from "react";
 import "./Hero.css"
-// import mainImage from "images/code-main-image.jpg"
-import IMAGES from '../../assets/data/skills.json'
+import IMAGES from '../../assets/data/skills.json';
+import { FormattedMessage } from "react-intl";
 
 const Hero = () => {
 
     const filterSkill = ["javascript", "typescript", "react", "angular", "git"]
 
     const skills = IMAGES.filter(skill => filterSkill.includes(skill.title))
-
-    console.log("ARRAYS SKILLS 1", skills);
-    
 
     skills.forEach((item) => {
         if(item.title === 'javascript'){
@@ -25,8 +22,6 @@ const Hero = () => {
             item.order = 5
         }
     });
-
-    console.log("ARRAYS SKILLS 2", skills);
     
     function compararPorEdad(a, b) {
         return a.order - b.order;
@@ -48,9 +43,20 @@ const Hero = () => {
                     <img src="images/me-main-hero.jpg" alt="Maaaik"/> */}
                 </div>
                 <div className="position">
-                    <h1>Front End Developer</h1>
-                    <p>Hi, I'm <span>Michael Reyes,</span><br/>
-                    A passionate about turn ideas into code from Colombia.</p>
+                    <h1>
+                        <FormattedMessage 
+                            id="hero.title"
+                            defaultMessage="Desarrollador Front End"
+                        />
+                    </h1>
+                    <p>
+                        <FormattedMessage 
+                            id="hero.description"
+                            defaultMessage="Hola, Soy Michael Reyes, Un apasionado de convertir ideas en coódigo desde Colombia"
+                        />
+                    </p>
+                    {/* <p>Hi, I'm <span>Michael Reyes,</span><br/>
+                    A passionate about turn ideas into code from Colombia.</p> */}
                     <div className="network">
                             <span data-tooltip="Linkedin">
                                 <img 
@@ -70,7 +76,12 @@ const Hero = () => {
                             </span>
                     </div>
                     <div className="skills">
-                        <h2>My skills</h2>
+                        <h2>
+                            <FormattedMessage 
+                                id="hero.titleSkills"
+                                defaultMessage="Mis habilidades"
+                            />
+                        </h2>
                         <div className="main-skills">
                             { IMAGES && skills.map((item) => 
                                 <div key={item.id}>
@@ -82,7 +93,12 @@ const Hero = () => {
                         </div>
                         <div className="created">
                             <img src="images/skills/react.svg" alt="React Portfolio"/>
-                            <p>"This portfolio was created with React"</p>
+                            <p>
+                                <FormattedMessage 
+                                    id="hero.created"
+                                    defaultMessage="Este portafolio fue creado con React"
+                                />
+                            </p>
                         </div>
                     </div>
                 </div>                

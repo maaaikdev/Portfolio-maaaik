@@ -1,7 +1,8 @@
 /* eslint-disable array-callback-return */
 import React, { useEffect, useState } from "react";
 import "./Jobs.css";
-import imageSkillList from '../ImagesSkills'
+import imageSkillList from '../../components/ImagesSkills';
+import { FormattedMessage } from "react-intl";
 
 const JobsComponent = ({list}) => {
     
@@ -27,14 +28,37 @@ const JobsComponent = ({list}) => {
         window.open(url, '_blank');
     }
 
+    const lang = localStorage.getItem('lang')
+
     return (
         <>
             {list.length > 0 && list?.map((project, index) => (
                 <div className="content-box">
                     <div className="left-job">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <h4>Tech used</h4>
+                        <h3>
+                            <FormattedMessage 
+                                id="projects.titleWeb"
+                                defaultMessage={project.title}
+                                values={{
+                                    title: project.title
+                                }}
+                            />
+                        </h3>
+                        <p>
+                            <FormattedMessage 
+                                id="projects.description"
+                                defaultMessage="Un sitio web de Salud y seguridad en el trabajo para el cliente Aserseguridad, fue creada en Angular con formularios en HubSpot."
+                                values={{
+                                    description: lang === 'es-CO' ? project.descriptionES : project.descriptionUS
+                                }}
+                            /> 
+                        </p>
+                        <h4>
+                            <FormattedMessage 
+                                id="projects.tech"
+                                defaultMessage="Tecnología usada"
+                            />
+                        </h4>
                         <div className="skills-list">
                             {project.tech?.map((skill, index) => (
                                 <div key={index}>
@@ -58,7 +82,7 @@ const JobsComponent = ({list}) => {
                                     onClick={() => handleLinkWebsite(project.url)}
                                 />                            
                             )}
-    {                       imagesSkills.length > 0 && (
+                            {imagesSkills.length > 0 && (
                                 <img 
                                     src={imagesSkills[3].image} 
                                     alt={imagesSkills[3].title} 

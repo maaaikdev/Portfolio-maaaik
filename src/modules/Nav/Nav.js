@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Nav.css";
+import { FormattedMessage } from 'react-intl';
 
 const NavBar = () => {
 
@@ -8,7 +9,6 @@ const NavBar = () => {
     useEffect(() => {
         // Function to update screenWidth whenever the window is resized
         const updateScreenWidth = () => {
-            console.log("screenWidth", window.innerWidth)
             setScreenWidth(window.innerWidth);
         };
     
@@ -24,10 +24,32 @@ const NavBar = () => {
     const getMenuDesktop = () => {
         return (
             <>
-                <a href="#home">Home</a>
-                <a href="#aboutMe">About me</a>
-                <a href='#projectsSection'>Projects</a>
-                <a href='#contact'>Contact</a>
+                {/* <button onClick={() => language.setLanguage('es-CO')}>ES</button>
+                <button onClick={() => language.setLanguage('en-US')}>EN</button> */}
+                <a href="#home">
+                    <FormattedMessage 
+                        id="menu.home"
+                        defaultMessage="Inicio"
+                    />
+                </a>
+                <a href="#aboutMe">
+                    <FormattedMessage 
+                        id="menu.aboutMe"
+                        defaultMessage="Acerca de mi"
+                    />
+                </a>
+                <a href='#projectsSection'>
+                    <FormattedMessage 
+                        id="menu.projects"
+                        defaultMessage="Projectos"
+                    />
+                </a>
+                <a href='#contact'>
+                    <FormattedMessage 
+                        id="menu.contact"
+                        defaultMessage="Contacto"
+                    />
+                </a>
             </>
         )
     }
