@@ -19,7 +19,7 @@
 
     "projects.title": "My projects",
     "projects.tech": "Tech used",
-    "projects.titleWeb": "{title}",
+    "projects.titleWeb": "{titleProject}",
     "projects.description": "{description}",
 
     "contact.title": "Contact",

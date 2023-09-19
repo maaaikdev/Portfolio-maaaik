@@ -40,13 +40,7 @@ const JobsComponent = ({list}) => {
             <div className="content-box" key={project.id}>
                 <div className="left-job" >
                         <h3>
-                            <FormattedMessage 
-                                id="projects.titleWeb"
-                                defaultMessage={project.title}
-                                values={{
-                                    titleProject: lang === 'es-CO' ? project.titleES : project.titleUS
-                                }}
-                            />
+                            {lang === 'es-CO' ? project.titleES : project.titleUS}
                         </h3>
                         <p>
                             <FormattedMessage 
