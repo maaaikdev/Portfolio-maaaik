@@ -19,7 +19,7 @@ const AboutMeComponent = ({list}) => {
                 <p>
                     <FormattedMessage 
                         id="aboutme.description1"
-                        defaultMessage="Como Desarrollador Front End, convierto ideas en código, he tenido la oportunidad de participar en diferentes proyectos de sitios web como Información, Financiero, Audivisual, Dashboards y Flujos de trabajo. He trabajado con algunas librerias como BPMN.js, Chart.js, Heatmap.js and Frameworks/Librerias como Angular, React and VCL. Estoy en la capacidad de hacer sitios web atractivos, interactivos, utiles y profesionales."
+                        defaultMessage="Como Desarrollador Front End, convierto ideas en código, he tenido la oportunidad de participar en diferentes proyectos de sitios web como Información, Financiero, Audivisual, Dashboards y Flujos de trabajo. He trabajado con algunas librerias como BPMN.js, Chart.js, Heatmap.js and Frameworks/Librerias como Angular, React and VCL. Estoy en la capacidad de hacer sitios web atractivos, interactivos, utiles y profesionales"
                     />
                 </p>
                 {/* <p>As a Front-End Developer, I turn ideas into code, i have had to chance to participate in several projects, Information, Financial, Audiovisual, Dashboards and Workflow Websites, i have worked some libraries like BPMN.js, Chart.js, Heatmap.js and Frameworks/Libraries as Angular, React and VCL. I am to able to make <span>attractive, interactive, useful</span> and <span>professional</span> websites.</p> */}
