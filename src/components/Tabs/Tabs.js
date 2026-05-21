@@ -36,7 +36,7 @@ const Tabs = () => {
             (item) => item.category === categories[activeTab]
         );
         setObjectsInCategory(filterByCategory);
-    }, [projects, activeTab]);
+    }, [projects, activeTab, categories]);
 
 
     const handleTabClick = (index) => {
