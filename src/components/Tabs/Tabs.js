@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import "./Tabs.css";
 import projectList from "../ProjectItems"
 import JobsComponent from '../../modules/Jobs/Jobs';
@@ -29,7 +29,9 @@ const Tabs = () => {
         fetchData();
     }, []);
 
-    const categories = [...new Set(projects.map((item) => item.category))];
+    const categories = useMemo(() => {
+        return [...new Set(projects.map((item) => item.category))];
+    }, [projects]);
 
     useEffect(() => {
         const filterByCategory = projects.filter(
